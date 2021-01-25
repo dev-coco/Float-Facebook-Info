@@ -80,7 +80,7 @@ if (check_url.match(reg)) {
                     }
                     */
                 } catch {}
-                var str = `<div style="text-align:center;">⚠️请勿截图</div>所在地：` + city_str + `<br>家乡：` + hometown_str + `<br>信仰：` + religion_str + `<br>语言：` + language_str + `<br>大学：` + college_str + `<br>生日：` + birthday + bad_people;
+                var str = `<div style="text-align:center;">⚠️请勿截图</div>所在地：` + city_str + `<br>家乡：` + hometown_str + `<br>信仰：` + religion_str + `<br>语言：` + language_str + `<br>大学：` + college_str + `<br>生日：` + birthday /* + bad_people */;
                 document.getElementById("facebook_info").innerHTML = str;
             } catch {}
         })();
