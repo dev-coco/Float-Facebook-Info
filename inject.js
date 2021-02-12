@@ -84,7 +84,7 @@ if (check_url.match(reg)) {} else {
                             }
                             // This is just an example, if you want to use it, you need to customize it.
                             /*
-                            var bad_people_id = RegExp(//g)；
+                            var bad_people_id = RegExp(//g);
                                 try {
                                     if (facebookID.match(bad_people_id)) {
                                         var bad_people = "<br><span style=\"font-size:25px;\">❌</span>";
