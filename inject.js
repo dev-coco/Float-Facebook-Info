@@ -20,6 +20,10 @@ if (check_url.match(reg)) {} else {
                     var get_html = document.documentElement.outerHTML;
                     try {
                         var facebookID = get_html.match(/(?<=userID":")[0-9].*?[0-9](?=")/g)[0];
+                        var MyFacebookID = get_html.match(/(?<=CurrentUserInitialData",\[\],{"USER_ID":").*?(?=")/g)[0];
+                        if (MyFacebookID == facebookID) {
+                            return;
+                        }
                         let response = await fetch('https://graph.facebook.com/' + facebookID + '?fields=location,hometown,name,languages,religion,education,birthday,gender,updated_time&access_token=' + token + '&pretty=0')
                         let text1 = await response.text()
                         try {
